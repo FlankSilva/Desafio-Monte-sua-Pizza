@@ -16,7 +16,6 @@ import {
 function Home() {
   return (
     <Container>
-      <Background />
       <Content>
         <ContainerLogo>
           <img src={logoIMG} alt=""/>
@@ -35,6 +34,7 @@ function Home() {
           </form>
         </AnimationContainer>
       </Content>
+      <Background />
     </Container>
   )
 }
