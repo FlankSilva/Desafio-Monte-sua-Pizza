@@ -3,29 +3,26 @@ import React, { useState, useEffect } from 'react';
 import dataAPI from '../../service'
 import Assembly from '../../components/Assembly'
 
-import { 
-  Container, 
-  Background,
-} from './styles';
+import { Container, Background } from './styles';
 
-function Home() {
+function Paste() {
   const [data, setData] = useState([])
 
   useEffect(() => {
     const response = dataAPI
-    setData(response.size)
+    setData(response.pasta)
   })
 
   return (
     <Container>
-      <Assembly 
+      <Assembly
         responseData={data} 
-        title="Escolha o tamanho da sua pizza" 
-        linkNext="/past"
+        title="Escolha a massa da sua pizza" 
+        linkNext="/filling"
       />
       <Background />
     </Container>
   )
 }
 
-export default Home;
+export default Paste;

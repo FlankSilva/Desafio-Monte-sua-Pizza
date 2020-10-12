@@ -8,24 +8,23 @@ import {
   Background,
 } from './styles';
 
-function Home() {
+function Filling() {
   const [data, setData] = useState([])
 
   useEffect(() => {
     const response = dataAPI
-    setData(response.size)
+    setData(response.Filling)
   })
 
   return (
     <Container>
-      <Assembly 
-        responseData={data} 
-        title="Escolha o tamanho da sua pizza" 
-        linkNext="/past"
+      <Assembly
+        responseData={data}
+        title="Escolha o recheio"
       />
       <Background />
     </Container>
   )
 }
 
-export default Home;
+export default Filling;
