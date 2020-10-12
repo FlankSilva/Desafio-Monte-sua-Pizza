@@ -68,7 +68,7 @@ export const AnimationContainer = styled.div`
   animation: ${appearFromLeft} 1s;
 
   form {
-    margin: 30px 0;
+    /* margin-top: 5px; */
     width: 100%;
     text-align: center;
   }

@@ -12,14 +12,37 @@ module.exports = {
       'Massa Pão de queijo',
       'Massa Brownie'
     ],
-    type: [
-      'Recheio meio a meio',
-      'Recheio inteiro'
-    ],
     Filling: [
       'Calabresa',
       'Portuguesa',
       'Marguerita',
-      'Frango com Catupiry'
-    ]
+      'Frango com Catupiry',
+      'Muçarela',
+      'Napolitana',
+      'Brigadeiro',
+      'Califórnia',
+      'Brócoles',
+    ],
+    recommendationOfDay: {
+      monday: {
+        size: 'Média - 8 fatias',
+        filling: 'Portuguesa',
+      },
+      tuesday: {
+        size: 'Média - 8 fatias',
+        filling: 'Marguerita',
+      },
+      wednesday: {
+        size: 'Média - 8 fatias',
+        filling: 'Muçarela',
+      },
+      thursday: {
+        size: 'Média - 8 fatias',
+        filling: 'Califórnia',
+      },
+      friday: {
+        size: 'Média - 8 fatias',
+        filling: 'Calabresa',
+      },
+    }
 }
