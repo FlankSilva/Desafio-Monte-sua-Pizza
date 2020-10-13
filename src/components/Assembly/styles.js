@@ -10,16 +10,31 @@ export const Container = styled.div`
 
 export const ContainerLogo = styled.div`
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 
   img {
-    width: 150px;
+    width: 160px;
   }
 
   p {
-    color: #fff;
-    font-size: 18px;
+    color: #f0932b;
+    font-size: 16px;
     font-weight: bold;
+
+  }
+  
+  div {
+    margin-top: 50px;
+    p {
+      color: #54a0ff;
+      font-size: 20px;
+
+      & + p {
+        margin-top: 10px;
+        font-size: 13px;
+        color: #fff;
+      }
+    }
   }
 `
 

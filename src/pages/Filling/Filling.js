@@ -10,10 +10,19 @@ import {
 
 function Filling() {
   const [data, setData] = useState([])
+  const [recomendationOfDay, setRecomendationOfDay] = useState({})
 
   useEffect(() => {
     const response = dataAPI
     setData(response.Filling)
+  })
+
+  useEffect(() => {
+    const date = new Date().getDay() - 1
+    const recomendation = dataAPI.recommendationOfDay[date]
+
+    setRecomendationOfDay(recomendation)
+
   })
 
   return (
@@ -21,6 +30,8 @@ function Filling() {
       <Assembly
         responseData={data}
         title="Escolha o recheio"
+        recomendation={recomendationOfDay}
+        linkNext="/endpage"
       />
       <Background />
     </Container>
